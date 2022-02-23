@@ -5,10 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" rel="stylesheet" type="text/css" />
+    
     <title>Isaac Saxonov</title>
   </head>
   <body>
-    <div class = "backgroundanimation">
+    <div id = "background" class = "backgroundanimation">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      VANTA.BIRDS({
+        el: "#background",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0x0,
+        color2: 0x4d4d4d,
+        colorMode: "lerp",
+        birdSize: 1.70,
+        wingSpan: 19.00,
+        speedLimit: 3.00,
+        separation: 38.00,
+        alignment: 16.00,
+        cohesion: 1.00,
+        quantity: 4.00
+      })
+      </script>
     <div class="navcon">
       <nav class="smull brown highlightTextOut">
         
