@@ -147,8 +147,8 @@ nav.smull
     display:block;
     font-family: Raleway;
     margin: 0 auto;
-	  padding: 10px 10px;
-	  text-align: left;
+    padding: 10px 10px;
+    text-align: left;
     position: relative;
     width:100%;
     z-index:4;
@@ -314,7 +314,7 @@ nav.highlightTextOut .svgimg:hover:before
   margin-left:0;
   margin-right:0;
   position: sticky;
-	top: 0;
+  top: 0;
   background-color: rgb(20, 20, 20);
   /* #1A1A2E */
   
@@ -379,7 +379,7 @@ nav.highlightTextOut .svgimg:hover:before
 
 .aboutbackground{
   width:100%;
-  
+  min-height: 100vh;
   position:relative;
   background-color: rgb(15, 15, 15);
   z-index:2;
@@ -395,11 +395,13 @@ nav.highlightTextOut .svgimg:hover:before
   margin-left: auto;
   margin-right: auto;  
   width:844px;
-  margin-top:1vh;
+  
+  margin-top: calc(50vh - 325px);
+  
   
   display: block;
   height:650px;
-  margin-bottom: 1vh;
+  
   position: relative;
   
 }
@@ -538,6 +540,13 @@ nav.highlightTextOut .svgimg:hover:before
   
 }
 
+@media screen and (max-height: 650px) {
+  .cardcontain{
+    margin-top: 30px;
+  }
+}
+
+
 @media screen and (max-width: 540px) {
   .smull a.point:not(:first-child) {display: none;}
   .smull .svgimg {
@@ -556,6 +565,7 @@ nav.highlightTextOut .svgimg:hover:before
 @media screen and (max-width: 960px) {
   .cardcontain{
     height:1200px;
+    margin-top: 30px;
   }
   .abouttitle {
     left:50vw;
@@ -607,5 +617,4 @@ nav.highlightTextOut .svgimg:hover:before
   }
   
 }
-
 
