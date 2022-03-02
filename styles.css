@@ -555,6 +555,7 @@ nav.highlightTextOut .svgimg:hover:before
     display:inline-block;
   }
   .cardtext{
+    
     top:135px;
     width: 300px;
     
@@ -563,6 +564,8 @@ nav.highlightTextOut .svgimg:hover:before
     font-size:19px;
   }
   .cardcontain{
+    height:430px;
+    margin-top:calc(50vh - 250px);
     width:610px;
   }
 }
