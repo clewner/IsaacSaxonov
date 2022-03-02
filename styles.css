@@ -565,12 +565,12 @@ nav.highlightTextOut .svgimg:hover:before
   }
   .cardcontain{
     height:430px;
-    margin-top:calc(50vh - 250px);
+    margin-top:calc(50vh - 220px);
     width:610px;
   }
 }
 
-@media screen and (max-height: 650px) {
+@media screen and (max-height: 800px) and (max-width: 400px) {
   .cardcontain{
     margin-top: 30px;
   }
