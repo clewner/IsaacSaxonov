@@ -541,6 +541,32 @@ nav.highlightTextOut .svgimg:hover:before
   
 }
 
+@media screen and (max-height: 800px) and (min-width:960px){
+  .abouttitle{
+    font-size:70px;
+  }
+  .meimg{
+    width:276.6px;
+    height:418.5px;
+  }
+  .imgtaint{
+    
+    top:40px;
+    display:inline-block;
+  }
+  .cardtext{
+    top:135px;
+    width: 300px;
+    
+  }
+  .cardp{
+    font-size:19px;
+  }
+  .cardcontain{
+    width:610px;
+  }
+}
+
 @media screen and (max-height: 650px) {
   .cardcontain{
     margin-top: 30px;
@@ -618,4 +644,3 @@ nav.highlightTextOut .svgimg:hover:before
   }
   
 }
-
