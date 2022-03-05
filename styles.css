@@ -449,18 +449,29 @@ nav.highlightTextOut .svgimg:hover:before
   
 }
 
+.slidewrap{
+  display: inline;
+  position: absolute;
+  
+  line-height: 0;
+  right:0.65rem;
+  top:8%;
+  
+}
+
 .imgtaint{
   line-height: 0;
   background-color: #ff0000;
   
-  right:0.65rem;
-  position: absolute;
+  
+  
   margin:0;
-  display: inline;
+  display: inline-block;
   padding:0;
   border-radius: 5px;
   transition: 0.3s;
-  top:8%;
+  
+  
   
   
   
@@ -489,7 +500,7 @@ nav.highlightTextOut .svgimg:hover:before
   0 0 10px #ff0000,
   0 0 21px #ff0000;
   transition: 0.3s;
-  z-index:-1;
+  z-index:-2;
 }
 
 
@@ -525,6 +536,37 @@ nav.highlightTextOut .svgimg:hover:before
 }
 
 
+.prodbackground{
+  width:100%;
+  min-height: 100vh;
+  position:relative;
+  background-color: rgb(0, 0, 0);
+  z-index:2;
+  overflow: hidden
+  
+}
+
+.reveal{
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  opacity: 1;
+}
+
+
+
+.slide{
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.slide.active{
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 
@@ -549,7 +591,7 @@ nav.highlightTextOut .svgimg:hover:before
     width:276.6px;
     height:418.5px;
   }
-  .imgtaint{
+  .slidewrap{
     
     top:40px;
     display:inline-block;
@@ -569,6 +611,10 @@ nav.highlightTextOut .svgimg:hover:before
     width:610px;
   }
 }
+
+
+
+
 
 @media screen and (max-height: 800px) and (max-width: 400px) {
   .cardcontain{
@@ -593,6 +639,17 @@ nav.highlightTextOut .svgimg:hover:before
 
 
 @media screen and (max-width: 960px) {
+  .slide{
+    transform: translate(-50%);
+    opacity: 0;
+    transition: 1s all ease;
+    
+  }
+  
+  .slide.active{
+    opacity: 1;
+    transform: translate(-50%);
+  }
   .cardcontain{
     height:1200px;
     margin-top: 30px;
@@ -604,7 +661,7 @@ nav.highlightTextOut .svgimg:hover:before
     top:0; 
     text-align: center;
   }
-  .imgtaint{
+  .slidewrap{
     left: calc(50vw - 0.65rem);
     transform: translate(-50%);
     display: inline-block;
@@ -625,6 +682,7 @@ nav.highlightTextOut .svgimg:hover:before
 @media screen and (max-width: 540px) {
   .cardcontain{
     height:1000px;
+    margin-bottom:120px;
   }
   .abouttitle{
     font-size:70px;
@@ -634,14 +692,14 @@ nav.highlightTextOut .svgimg:hover:before
     width:276.6px;
     height:418.5px;
   }
-  .imgtaint{
+  .slidewrap{
     width:276.6px;
     top:170px;
     display:inline-block;
   }
   .cardtext{
-    margin-left:1vw;
-    margin-right:1vw;
+    width:276.6px;
+    
     top: 650px;
     
   }
