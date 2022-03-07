@@ -409,6 +409,11 @@ nav.highlightTextOut .svgimg:hover:before
   top:8%;
   
 }
+
+.disable-hover {
+  pointer-events: none;
+}
+
 .imgtaint{
   line-height: 0;
   background-color: #ff0000;
@@ -559,7 +564,7 @@ nav.highlightTextOut .svgimg:hover:before
 }
 @media screen and (max-height: 800px) and (max-width: 400px) {
   .cardcontain{
-    margin-top: 30px;
+    margin-top: 60px;
   }
 }
 @media screen and (max-width: 540px) {
@@ -575,20 +580,21 @@ nav.highlightTextOut .svgimg:hover:before
   }
 }
 @media screen and (max-width: 960px) {
-  .slide{
-    transform: translate(-50%);
-    opacity: 0;
-    transition: 1s all ease;
-    
+  .animated.slide-in-left{
+    animation: none;
+  
+  }
+  .animated.fade-in {
+    animation: none;
   }
   
-  .slide.active{
+  
+  .waypoint{
     opacity: 1;
-    transform: translate(-50%);
   }
   .cardcontain{
     height:1200px;
-    margin-top: 30px;
+    margin-top: 60px;
   }
   .abouttitle {
     left:50vw;
