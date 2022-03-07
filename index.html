@@ -5,11 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="scripts.js"></script>
+    
     <link rel="icon" type="image/png" href="img/fullred.png" >
+
     <title>Isaac Saxonov</title>
   </head>
-  <body>
+  <body class = "overfow" id = "body">
+    <div class = "loader" id = "loader">
+      <div class='loader7'>
+        <div class='spinner3'>
+          <div class='container-B'>
+            <div class='hex0'></div>
+            <div class='hex120'></div>
+            <div class='hex240'></div>
+            <div class='spinner3'>
+              <div class='container-B'>
+                <div class='hex0'></div>
+                <div class='hex120'></div>
+                <div class='hex240'></div>
+                <div class='spinner3'>
+                  <div class='container-B'>
+                    <div class='hex0'></div>
+                    <div class='hex120'></div>
+                    <div class='hex240'></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class = "content" id="content">
     <div id = "background" class = "backgroundanimation">
      
       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
@@ -41,7 +70,7 @@
         <?xml version="1.0" encoding="UTF-8"?>
 
         <h1 class = "midtext">Hey, I'm Isaac</h1>
-        <button onclick="window.location.href='#firstscroll';" class="shrink-border">Learn More</button>
+        <a href = "#firstscroll"><button class="shrink-border">Learn More</button></a>
       </div>
     
     
@@ -89,5 +118,8 @@
     </div>
     <!--<div class = "prodbackground">
     </div>-->
+    </div>
+    
+    
   </body>
 </html>
