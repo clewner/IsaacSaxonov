@@ -434,8 +434,8 @@ nav.highlightTextOut .svgimg:hover:before
   border: 3px solid red;
   color:red;
   width:100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility:hidden;
+  
+
   height:100%;
   display:block;
   
@@ -484,24 +484,38 @@ nav.highlightTextOut .svgimg:hover:before
   overflow: hidden
   
 }
-.reveal{
-  opacity: 0;
-  transition: 1s all ease;
+
+
+
+.animated.slide-in-left{
+  animation: slideInLeft 0.75s ease both;
+
 }
-.reveal.active{
-  opacity: 1;
-}
-.slide{
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
-}
-.slide.active{
-  opacity: 1;
-  transform: translateY(0);
+.animated.fade-in {
+  animation: fadeIn 0.75s ease both;
 }
 
 
+.waypoint{
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 @keyframes pulse {
   0%{ 
