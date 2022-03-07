@@ -12,11 +12,13 @@
   box-sizing: border-box;
 }
 
+
+
 html{
   width:100%;
   right:0;
   left:0;
-  scroll-behavior: smooth;
+  
 }
 
 body {
@@ -26,11 +28,17 @@ body {
   left:0;
   right:0;
   overflow-x: hidden;
+  overflow-y: hidden;
+  transition: opacity 0.6s;
+  
   
 }
 
 
+
+
 .backgroundanimation{
+  opacity: 1;
   width:100%;
   height:100vh;
   position:relative;
@@ -78,7 +86,7 @@ button::after, button::before {
 
 .shrink-border {
   background-color: transparent;
-  color: #AAA;
+  color: rgb(180, 180, 180);
   cursor: pointer;
 }
 .shrink-border:hover {
@@ -570,6 +578,153 @@ nav.highlightTextOut .svgimg:hover:before
 
 
 
+.loader{
+  opacity:1;
+  height:100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index:9;
+  background: black;
+  position: fixed;
+}
+
+.loader7{
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin: auto;
+	box-sizing:border-box;
+	width:100px;
+	height:100px;
+	position:absolute;
+}
+
+
+
+.container-B{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+}
+
+.spinner3{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+}
+
+
+
+.spinner3{
+	animation : rotation0 6s infinite linear, resize3 6s infinite linear;
+}
+
+.hex0, .hex120, .hex240{
+	position:absolute;
+	box-sizing:border-box;
+	width:100%;
+	height:57.74%;
+	left:0;
+	top:21.13%;
+	border-left:1px solid red;
+  
+	border-right:1px solid red;
+  box-shadow: 0px 0px 3px 0px white,
+  0px 0px 10px 0px red;
+  
+}
+
+
+
+
+
+.hex0{
+	animation:rotation0 4s infinite linear;
+}
+
+.hex120{
+	transform:rotate(120deg);
+	animation:rotation120 4s infinite linear;
+}
+
+.hex240{
+	transform:rotate(240deg);
+	animation:rotation240 4s infinite linear;
+}
+
+@keyframes rotation0{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
+
+@keyframes rotation120{
+	0%{
+		transform:rotate(120deg);
+	}
+	100%{
+		transform:rotate(480deg);
+	}
+}
+
+@keyframes rotation240{
+	0%{
+		transform:rotate(240deg);
+	}
+	100%{
+		transform:rotate(600deg);
+	}
+}
+
+
+@keyframes resize3{
+	0%,16.66%,33.33%,50%,66.66%,83.33%,100%{
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;
+	}
+	2.77%,19.44%,36.11%,52.77%,69.44%,86.11%{
+		width:93.5%;
+		height:93.5%;
+		top:3.25%;
+		left:3.25%;
+	}
+	5.55%,22.22%,38.88%,55.55%,72.22%,88.88%{
+		width:84.4%;
+		height:84.4%;
+		top:7.8%;
+		left:7.8%;
+	}
+	8.33%,25%,41.66%,58.33%,75%,91.66%{
+		width:73.2%;
+		height:73.2%;
+		top:13.4%;
+		left:13.4%;
+	}
+	11.11%,27.77%,44.44%,61.11%,77.77%,94.44%{
+		width:84.4%;
+		height:84.4%;
+		top:7.8%;
+		left:7.8%;
+	}
+	 13.88%,30.55%,47.22%,63.88%,80.55%,97.22%{
+		width:93.5%;
+		height:93.5%;
+		top:3.25%;
+		left:3.25%;
+	}
+}
+
+
 @keyframes pulse {
   0%{ 
     filter:
@@ -652,7 +807,7 @@ nav.highlightTextOut .svgimg:hover:before
   }
   .cardcontain{
     height:1200px;
-    margin-top: 30px;
+    margin-top: 60px;
   }
   .abouttitle {
     left:50vw;
