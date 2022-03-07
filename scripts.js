@@ -48,4 +48,18 @@ function onScrollInit(items, elemTrigger) {
 setTimeout(function() {
   onScrollInit($('.waypoint'));
 }, 10);
+
+
+});
+var lockTimer;
+$(window).on('scroll', function() {
+  clearTimeout(lockTimer);
+    if (!$('body').hasClass('disable-hover')) {
+      $('body').addClass('disable-hover');
+    }
+
+    lockTimer = setTimeout(function() {
+      $('body').removeClass('disable-hover');
+    }, 500);
+
 });
