@@ -493,6 +493,7 @@ nav.highlightTextOut .svgimg:hover:before
 .gradeimgwrap{
   display: inline-block;
   position: absolute;
+  z-index: 4;
   left:0;
   top: 220px;
   background: red;
@@ -521,7 +522,7 @@ nav.highlightTextOut .svgimg:hover:before
   height:650px;
   
   position: relative;
-  z-index: 4;
+  
 }
 
 .prodtitle{
