@@ -16,6 +16,11 @@ $('.page-link').click(function() {
 });
 
 });
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 $(document).ready(function(){
 function onScrollInit(items, elemTrigger) {
   var offset = $(window).height() / 1.6;
@@ -60,6 +65,6 @@ $(window).on('scroll', function() {
 
     lockTimer = setTimeout(function() {
       $('body').removeClass('disable-hover');
-    }, 300);
+    }, 180);
 
 });
