@@ -60,6 +60,6 @@ $(window).on('scroll', function() {
 
     lockTimer = setTimeout(function() {
       $('body').removeClass('disable-hover');
-    }, 500);
+    }, 300);
 
 });
