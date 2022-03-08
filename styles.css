@@ -493,7 +493,7 @@ nav.highlightTextOut .svgimg:hover:before
 .gradeimgwrap{
   display: inline-block;
   position: absolute;
-  z-index: 4;
+  
   left:0;
   top: 220px;
   background: red;
@@ -501,13 +501,48 @@ nav.highlightTextOut .svgimg:hover:before
   border-radius: 5px;
 }
 .gradeimg{
+  position: relative;
   width:548.57px;
   height: 308.57px;
   border-radius:5px;
   opacity: 0.8;
+  
+  transition: 0.8s;
 }
 
+.gradeimg:hover{
+  opacity:1;
+  width:685.71px;
+  height: 385.71px;
+  z-index: 1;
+
+  
+}
+
+
+.prodtextcard{
+  font-family: 'Fredoka', sans-serif;
+  border-radius: 5px;
+  line-height: 150%;
+  color:white;
+  background: rgba(0, 0, 0, 0.8);
+  padding:10px;
+  padding-right:30px;
+  font-size: 20px;
+  word-wrap: normal;
+  width:500px;
+  top:280px;
+  position: absolute;
+  display: inline-block;
+  right:50px;
+  text-align:right;
+  
+}
+
+
+
 .prodcontain{
+  
   display: flex;
   flex-direction: column;
   justify-content: center; 
@@ -526,16 +561,16 @@ nav.highlightTextOut .svgimg:hover:before
 }
 
 .prodtitle{
-  z-index: 6;
+
+  z-index: 7;
   display: inline;
-  text-decoration: underline;
   font-family: "Montserrat", sans-serif;
   top:0;
   left: 0;
   width: 100%;
   position: absolute;
   color:white;
-  font-size: 70px;
+  font-size: 80px;
   
   
   text-align: center;
