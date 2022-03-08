@@ -521,9 +521,11 @@ nav.highlightTextOut .svgimg:hover:before
   height:650px;
   
   position: relative;
+  z-index: 4;
 }
 
 .prodtitle{
+  z-index: 6;
   display: inline;
   text-decoration: underline;
   font-family: "Montserrat", sans-serif;
