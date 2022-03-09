@@ -130,8 +130,12 @@ button::after, button::before {
     0 0 20px #ff0000;
   
 }
+
+
+
 nav.smull
 {
+    
     background-color: rgb(20, 20, 20);
     display:block;
     font-family: Raleway;
@@ -145,6 +149,7 @@ nav.smull
 }
 nav.smull .point
 {
+    transition: 1s;
     color: rgba(255, 255, 255, 0.3);
     text-decoration: none;
     font: 20px Raleway;
@@ -284,6 +289,11 @@ nav.highlightTextOut .svgimg:hover:before
   
   
 }
+nav.smull .active {
+  color: rgba(255, 255, 255, 0.85);
+  
+}
+
 .underglow{
   width:100%;
   height:1px;
