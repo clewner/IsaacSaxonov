@@ -135,7 +135,7 @@ button::after, button::before {
 
 nav.smull
 {
-    
+  transition: height 2s;
     background-color: rgb(20, 20, 20);
     display:block;
     font-family: Raleway;
@@ -149,6 +149,7 @@ nav.smull
 }
 nav.smull .point
 {
+    
     transition: 1s;
     color: rgba(255, 255, 255, 0.3);
     text-decoration: none;
@@ -177,6 +178,11 @@ nav.smull .point
 .titletext{
   vertical-align: middle;
 }
+
+.newthing{
+  display: inline-block;
+}
+
 nav.smull .dot
 {
     vertical-align: middle;
@@ -268,7 +274,7 @@ nav.highlightTextOut .svgimg:hover:before
     text-align: center;
 }
 .navcon{
-  
+  transition: max-height 0.25s ease-in;
   text-align: left;
   z-index:8;
   display:block;
@@ -682,7 +688,20 @@ nav.smull .active {
   }
 }
 @media screen and (max-width: 540px) {
-  .smull a.point:not(:first-child) {display: none;}
+  .newthing{
+    height:0;
+    overflow: hidden;
+    display: block;
+    transition: height 0.5s;
+    
+  }
+  .smull .navtog{
+    display: inline;
+  }
+  
+
+  
+
   .smull .svgimg {
     display:inline;
     float:right;
@@ -691,6 +710,20 @@ nav.smull .active {
     
     z-index:8;
     
+  }
+  .point{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  #firstlink{
+    margin-top: 10px;
+  }
+
+  .newthing.dropped{
+    float:none;
+    height:190px;
   }
 }
 @media screen and (max-width: 960px) {
@@ -729,6 +762,7 @@ nav.smull .active {
     
     text-align: center;
   }
+  
   
   .cardtext{
     left:50vw;
