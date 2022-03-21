@@ -76,7 +76,7 @@ $(window).on('scroll', function() {
   
       lockTimer = setTimeout(function() {
         $('body').removeClass('disable-hover');
-      }, 180);
+      }, 40);
       
       
 
@@ -93,3 +93,16 @@ $(window).on('scroll', function() {
 
 
 });
+
+
+
+function bigdrop(){
+  var link = document.getElementById("newthing");
+    
+  if(link.classList.contains("dropped")){
+    link.classList.remove("dropped");
+  }else{
+    link.classList.add("dropped");
+  }
+
+}
