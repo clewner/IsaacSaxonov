@@ -5,6 +5,7 @@ var isMobile;
     )
   ) {
     isMobile = true;
+    //mobile
   }
 $(document).ready(function(){
 
