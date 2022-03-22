@@ -8,11 +8,7 @@ var isMobile;
   }
 $(document).ready(function(){
 
-  if (isMobile) {
-    $('#navcon').addClass('fixed');
-  } else {
-    $('#navcon').addClass('desk');
-  }
+  
 
   $(".one").click(function(){
     $(this).toggleClass("is-active");
@@ -26,7 +22,7 @@ $(window).on('scroll', function() {
   
     var pos = $(window).scrollTop();
     var pos2 = pos + 50;
-    if(!isMobile){
+    
     if($("#newthing").hasClass("dropped")){
      
       if (pos >= navPos + $('#navcon').height() && lastPos < pos ) {
@@ -50,7 +46,7 @@ $(window).on('scroll', function() {
       
     }
     lastPos = pos;
-  }
+  
     clearTimeout(lockTimer);
       if (!$('body').hasClass('disable-hover')) {
         $('body').addClass('disable-hover');
