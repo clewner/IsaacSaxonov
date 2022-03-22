@@ -1,4 +1,18 @@
+var isMobile;
+  if (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+  ) {
+    isMobile = true;
+  }
 $(document).ready(function(){
+
+  if (isMobile) {
+    $('#navcon').addClass('fixed');
+  } else {
+    $('#navcon').addClass('desk');
+  }
 
   $(".one").click(function(){
     $(this).toggleClass("is-active");
@@ -9,6 +23,7 @@ var lastPos = 0;
 var lockTimer;
 $(window).on('scroll', function() {
     
+  
     var pos = $(window).scrollTop();
     var pos2 = pos + 50;
     
