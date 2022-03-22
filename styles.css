@@ -354,7 +354,7 @@ nav.highlightTextOut .svgimg:hover:before
   height:58px;
   width:100%;
   left:0;
-  bottom:-58px;
+  top: calc(100vh);
   padding-left:0;
   padding-right:0;
   padding:0;
