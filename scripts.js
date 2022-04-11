@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  //add device type for productions page
 
   $(".one").click(function(){
     $(this).toggleClass("is-active");
