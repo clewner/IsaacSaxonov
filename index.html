@@ -45,7 +45,7 @@
         <?xml version="1.0" encoding="UTF-8"?>
 
         <h1 class = "midtext">Hey, I'm Isaac</h1>
-        <button class="shrink-border page-link" dest = "about">Learn More</button>
+        <button class="shrink-border page-link" dest = "about" onclick = "smalldrop()">Learn More</button>
       </div>
 
 
@@ -54,7 +54,7 @@
     <div class="navcon desk" id = "navcon">
       <nav class="smull brown highlightTextOut">
         
-        <a alt="ISAAC SAXONOV" class="dot page-link active" id = "logoimg" dest = "home">
+        <a alt="ISAAC SAXONOV" onclick = "smalldrop()" class="dot page-link active" id = "logoimg" dest = "home">
           <svg class = "logoimg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46px" height="35px" viewBox="0 0 46 35" version="1.1">
             <g id="surface1">
             <rect x="0" y="0" width="46" height="35" style="fill:rgb(0.392157%,0.392157%,0.392157%);fill-opacity:0;stroke:none;"/>
@@ -96,8 +96,15 @@
         <div class = "gradecontain waypoint" data-animation="slide-in-left">
         <div class = "gradeimgwrap" ><img src = "img/sasdfasdf.png" class = "gradeimg"></div>
         <div class = "prodtextcard">
-          <h3 class = "gradetitle"><b>GRADE CALCULATED</b></h3>
-          <p class = "gradep">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum diam nunc, sit amet molestie enim eleifend quis.</p>
+          <a class = "hyperlink" href = "http://gradecalculated.com"><h3 class = "gradetitle"><b>GRADE CALCULATED</b></h3></a>
+          <p class = "gradep">Grade Calculated is a website that helps students calculate their final grade, their GPA and learn new words to help them write essays. The website is built using HTML, CSS and Javascript and the word bank for the essay word generator was created using a web scraper built in Python. The site is hosted on github pages <a href = "http://gradecalculated.com/" class = "dyperlink">here</a>.</p>
+        </div>
+      </div>
+      <div class = "swervecontain waypoint" data-animation="slide-in-right">
+        <div class = "swerveimgwrap" ><img src = "img/gamess.png" class = "swerveimg"></div>
+        <div class = "swervetextcard">
+          <a class = "hyperlink" href = "https://clewn.itch.io/swerve"><h3 class = "gradetitle"><b>SWERVE</b></h3></a>
+          <p class = "gradep">Swerve is a browser game I am still developing in Unity using C#. You play as a square trying to stay alive and collect tiny hexagons as you are constantly barraged by triangular projectles. The game is hosted on itch.io <a href = "https://clewn.itch.io/swerve" class = "dyperlink">here</a>.</p>
         </div>
       </div>
       </div>
