@@ -611,6 +611,57 @@ nav.smull .active {
   transition: 0.8s;
 }
 
+.swervetextcard{
+  font-family: 'Fredoka', sans-serif;
+  border-radius: 5px;
+  line-height: 150%;
+  color:white;
+  background: rgba(0, 0, 0, 0.8);
+  padding:10px;
+  padding-right:30px;
+  font-size: 20px;
+  padding-left:15px;
+  word-wrap: normal;
+  width:500px;
+  top:280px;
+  position: absolute;
+  display: inline-block;
+  left:50px;
+  text-align:left;
+}
+
+
+
+.swerveimgwrap{
+  display: inline-block;
+  position: absolute;
+  
+  right:0;
+  top: 220px;
+  background: red;
+  line-height: 0;
+  border-radius: 5px;
+}
+
+.swerveimg{
+  position: relative;
+  width:548.57px;
+  height: 308.57px;
+  border-radius:5px;
+  opacity: 0.8;
+  
+  transition: 0.8s;
+}
+
+.swerveimg:hover{
+  opacity:1;
+  width:685.71px;
+  height: 385.71px;
+  z-index: 1;
+
+  
+}
+
 .gradeimg:hover{
   opacity:1;
   width:685.71px;
@@ -620,6 +671,17 @@ nav.smull .active {
   
 }
 
+.gradetitle{
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 
+    0 0 4px white,
+    0 0 10px #ff0000,
+    0 0 21px #ff0000,
+    1px 0 0 #ff0000,
+    -1px 0 0 #ff0000,
+    0 -1px 0 #ff0000,
+    0 1px 0 #ff0000;
+}
 
 .prodtextcard{
   font-family: 'Fredoka', sans-serif;
@@ -630,6 +692,7 @@ nav.smull .active {
   padding:10px;
   padding-right:30px;
   font-size: 20px;
+  padding-left:15px;
   word-wrap: normal;
   width:500px;
   top:280px;
@@ -641,6 +704,18 @@ nav.smull .active {
 }
 
 
+.gradecontain{
+  top:0;
+  left:0;
+  
+  position: relative;
+  
+
+}
+.swervecontain{
+  top:450px;
+  position: relative;
+}
 
 .prodcontain{
   
@@ -655,7 +730,7 @@ nav.smull .active {
   
   
   display: block;
-  height:650px;
+  height:1200px;
   
   position: relative;
   
@@ -685,6 +760,14 @@ nav.smull .active {
     0 1px 0 #ff0000;
 }
 
+.hyperlink{
+  text-decoration: none;
+  color:white; 
+}
+.dyperlink{
+  color:white;
+}
+
 .animated.slide-up {
   animation: slideUp 0.75s ease both;
 }
@@ -693,6 +776,11 @@ nav.smull .active {
   animation: slideInLeft 0.75s ease both;
 
 }
+
+.animated.slide-in-right {
+  animation: slideInRight 0.75s ease both;
+}
+
 .animated.fade-in {
   animation: fadeIn 0.75s ease both;
 }
@@ -707,6 +795,17 @@ nav.smull .active {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
