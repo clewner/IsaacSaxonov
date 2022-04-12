@@ -594,9 +594,9 @@ nav.smull .active {
 .gradeimgwrap{
   display: inline-block;
   position: absolute;
-  
-  left:0;
-  top: 220px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  left:25px;
+  top: 0px;
   background: red;
   line-height: 0;
   border-radius: 5px;
@@ -608,58 +608,7 @@ nav.smull .active {
   border-radius:5px;
   opacity: 0.8;
   
-  transition: 0.8s;
-}
-
-.swervetextcard{
-  font-family: 'Fredoka', sans-serif;
-  border-radius: 5px;
-  line-height: 150%;
-  color:white;
-  background: rgba(0, 0, 0, 0.8);
-  padding:10px;
-  padding-right:30px;
-  font-size: 20px;
-  padding-left:15px;
-  word-wrap: normal;
-  width:500px;
-  top:280px;
-  position: absolute;
-  display: inline-block;
-  left:50px;
-  text-align:left;
-}
-
-
-
-.swerveimgwrap{
-  display: inline-block;
-  position: absolute;
-  
-  right:0;
-  top: 220px;
-  background: red;
-  line-height: 0;
-  border-radius: 5px;
-}
-
-.swerveimg{
-  position: relative;
-  width:548.57px;
-  height: 308.57px;
-  border-radius:5px;
-  opacity: 0.8;
-  
-  transition: 0.8s;
-}
-
-.swerveimg:hover{
-  opacity:1;
-  width:685.71px;
-  height: 385.71px;
-  z-index: 1;
-
-  
+  transition: 0.4s;
 }
 
 .gradeimg:hover{
@@ -684,6 +633,7 @@ nav.smull .active {
 }
 
 .prodtextcard{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
   font-family: 'Fredoka', sans-serif;
   border-radius: 5px;
   line-height: 150%;
@@ -695,10 +645,10 @@ nav.smull .active {
   padding-left:15px;
   word-wrap: normal;
   width:500px;
-  top:280px;
+  top:60px;
   position: absolute;
   display: inline-block;
-  right:50px;
+  right:30px;
   text-align:right;
   
 }
@@ -712,10 +662,8 @@ nav.smull .active {
   
 
 }
-.swervecontain{
-  top:450px;
-  position: relative;
-}
+
+
 
 .prodcontain{
   
@@ -730,14 +678,14 @@ nav.smull .active {
   
   
   display: block;
-  height:1200px;
+  height:1450px;
   
   position: relative;
   
 }
 
 .prodtitle{
-
+  
   z-index: 7;
   display: inline;
   font-family: "Montserrat", sans-serif;
@@ -760,6 +708,138 @@ nav.smull .active {
     0 1px 0 #ff0000;
 }
 
+
+.swervetextcard{
+  font-family: 'Fredoka', sans-serif;
+  border-radius: 5px;
+  line-height: 150%;
+  color:white;
+  background: rgba(0, 0, 0, 0.8);
+  padding:10px;
+  padding-left:30px;
+  font-size: 20px;
+  padding-right:15px;
+  word-wrap: normal;
+  width:500px;
+  top:60px;
+  position: absolute;
+  display: inline-block;
+  left:25px;
+  text-align:left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.swerveimgwrap{
+  display: inline-block;
+  position: absolute;
+  
+  right:25px;
+  top: 0px;
+  background: red;
+  line-height: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  
+}
+
+.swervecontain{
+  top:615px;
+  position: relative;
+}
+
+.swerveimg{
+  position: relative;
+  width:548.57px;
+  height: 308.57px;
+  border-radius:5px;
+  opacity: 0.8;
+  
+  transition: 0.4s;
+}
+
+.swerveimg:hover{
+  opacity:1;
+  width:685.71px;
+  height: 385.71px;
+  z-index: 1;
+  
+  
+}
+
+
+.quoteimgwrap{
+  display: inline-block;
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  left:25px;
+  top: 0px;
+  background: red;
+  line-height: 0;
+  border-radius: 5px;
+}
+.quoteimg{
+  position: relative;
+  width:548.57px;
+  height: 308.57px;
+  border-radius:5px;
+  opacity: 0.8;
+  
+  transition: 0.4s;
+}
+
+.quoteimg:hover{
+  opacity:1;
+  width:685.71px;
+  height: 385.71px;
+  z-index: 1;
+
+  
+}
+
+.quotetextcard{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  font-family: 'Fredoka', sans-serif;
+  border-radius: 5px;
+  line-height: 150%;
+  color:white;
+  background: rgba(0, 0, 0, 0.8);
+  padding:10px;
+  padding-right:30px;
+  font-size: 20px;
+  padding-left:15px;
+  word-wrap: normal;
+  width:500px;
+  top:60px;
+  position: absolute;
+  display: inline-block;
+  right:30px;
+  text-align:right;
+  
+
+}
+
+
+
+.quotecontain{
+  position: relative;
+  top:1010px;
+}
+
+
+
+
+.gradecontain{
+  top:220px;
+  
+  
+  position: relative;
+  
+
+}
+
+
 .hyperlink{
   text-decoration: none;
   color:white; 
@@ -781,6 +861,10 @@ nav.smull .active {
   animation: slideInRight 0.75s ease both;
 }
 
+.animated.slide-down {
+  animation: slideDown 0.75s ease both;
+}
+
 .animated.fade-in {
   animation: fadeIn 0.75s ease both;
 }
@@ -791,6 +875,16 @@ nav.smull .active {
   0% {
     transform: translateY(300px);
     opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-300px);
   }
   100% {
     opacity: 1;
@@ -871,6 +965,29 @@ nav.smull .active {
     margin-top:calc(50vh - 220px);
     width:610px;
   }
+
+  .prodtitle{
+    font-size:70px;
+  }
+  .prodcontain{
+    margin-top:45px;
+    height:1400px;
+  }
+
+  .gradecontain{
+    top:190px;
+  }
+
+  .swervecontain{
+    top:585px;
+  }
+
+  .quotecontain{
+    top:980px;
+  }
+  
+
+
 }
 @media screen and (max-height: 800px) and (max-width: 400px) {
   .cardcontain{
