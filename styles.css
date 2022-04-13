@@ -446,6 +446,7 @@ nav.smull .active {
   
 }
 .cardcontain{
+  
   display: flex;
   flex-direction: column;
   justify-content: center; 
@@ -602,6 +603,7 @@ nav.smull .active {
   border-radius: 5px;
 }
 .gradeimg{
+  content:url("img/gradecalcimg.png");
   position: relative;
   width:548.57px;
   height: 308.57px;
@@ -648,7 +650,7 @@ nav.smull .active {
   top:60px;
   position: absolute;
   display: inline-block;
-  right:30px;
+  right:25px;
   text-align:right;
   
 }
@@ -755,7 +757,7 @@ nav.smull .active {
   height: 308.57px;
   border-radius:5px;
   opacity: 0.8;
-  
+  content:url("img/gamess.png");
   transition: 0.4s;
 }
 
@@ -780,6 +782,7 @@ nav.smull .active {
   border-radius: 5px;
 }
 .quoteimg{
+  content:url("img/quote.png");
   position: relative;
   width:548.57px;
   height: 308.57px;
@@ -814,7 +817,7 @@ nav.smull .active {
   top:60px;
   position: absolute;
   display: inline-block;
-  right:30px;
+  right:25px;
   text-align:right;
   
 
@@ -989,6 +992,38 @@ nav.smull .active {
 
 
 }
+
+@media screen and (max-width: 870px){
+  
+
+  .prodcontain{
+    width:100vw;
+    margin-top:60px;
+  }
+
+  .prodtitle{
+    font-size:65px;
+    text-align: center;
+  }
+
+  .gradecontain{
+    top:170px;
+  }
+
+  .swervecontain{
+    top:565px;
+  }
+
+  .quotecontain{
+    top:960px;
+  }
+
+  
+  
+
+  
+}
+
 @media screen and (max-height: 800px) and (max-width: 400px) {
   .cardcontain{
     margin-top: 60px;
@@ -1062,17 +1097,19 @@ nav.smull .active {
   .cardcontain{
     height:1200px;
     margin-top: 60px;
+    
+    width:100vw;
   }
   .abouttitle {
     left:50vw;
-    transform: translate(-50%);
+    transform: translateX(-50%);
     
     top:0; 
     text-align: center;
   }
   .slidewrap{
-    left: calc(50vw - 0.65rem);
-    transform: translate(-50%);
+    left: 50vw;
+    transform: translateX(-50%);
     display: inline-block;
     width:368.8px;
     top:230px;
@@ -1083,7 +1120,7 @@ nav.smull .active {
   
   .cardtext{
     left:50vw;
-    transform: translate(-50%);
+    transform: translateX(-50%);
     top: 850px;
     text-align: center;
   }
