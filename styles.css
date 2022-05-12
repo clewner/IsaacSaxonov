@@ -410,15 +410,19 @@ nav.smull .active {
 .randoms{
   margin: 0;
   position: absolute;
+  display: inline-block;
+
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -85%);
+  transform: translate(-50%, -50%);
   text-align: center;
   
   
   
 }
 .midtext{
+  padding-top:0;
+  margin-top:0;
   color:white;
   z-index:9;
   background-color: transparent;
@@ -820,9 +824,7 @@ nav.smull .active {
   right:25px;
   text-align:right;
   
-
 }
-
 
 
 .quotecontain{
@@ -831,17 +833,11 @@ nav.smull .active {
 }
 
 
-
-
 .gradecontain{
   top:220px;
-  
-  
   position: relative;
   
-
 }
-
 
 .hyperlink{
   text-decoration: none;
