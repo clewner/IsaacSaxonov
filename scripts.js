@@ -152,3 +152,15 @@ function bigdrop(){
   
 
 }
+
+function smalldrop(){
+  var link = document.getElementById("newthing");
+  var glowy = document.getElementById("underglow");
+    
+  setTimeout(() => {if(link.classList.contains("dropped")){
+    link.classList.remove("dropped");
+    glowy.classList.remove("dropped");
+  }}, 0);
+  
+
+}
