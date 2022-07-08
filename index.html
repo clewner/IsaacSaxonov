@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    
     <script src="scripts.js"></script>
     <link rel="icon" type="image/png" href="img/fullred.png" >
     <title>Isaac Saxonov</title>
@@ -73,7 +76,7 @@
             
           </div></div></a><div class="newthing" id = "newthing"><a onclick = "smalldrop()" alt="ABOUT" dest="about" class="point page-link" id="firstlink">ABOUT</a
         ><a onclick = "smalldrop()" alt="PRODUCTIONS" dest = "productions" class="point page-link">PRODUCTIONS</a
-        ><a onclick = "smalldrop()" alt="CONTACT" class="point page-link">CONTACT</a></div>
+        ><a onclick = "smalldrop()" alt="CONTACT" dest = "contact" class="point page-link">CONTACT</a></div>
         
         
         
@@ -115,6 +118,29 @@
         </div>
       </div>
       </div>
+    </div>
+    <div id = "contact" class = "contactbackground">
+      
+      <div class = "contactcontain">
+        <h1 class = "contacttitle waypoint" data-animation="slide-in-left">CONTACT</h1>
+        <form action="https://formsubmit.co/228f767556a147dd57f7144b64e6e7a1" method="POST" class = "waypoint" data-animation="slide-in-right-extra">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" name="name" class="form-control texbox" placeholder="Full Name" required>
+              </div>
+              <div class="col">
+                <input type="email" name="email" class="form-control texbox" placeholder="Email Address" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+          </div>
+          <button type="submit" class = "shrink-border buttonform">Submit</button>
+        </form>
+      </div>
+      <div class = "contacticons"><a class = "gmail"><i class="fa fa-solid fa-envelope"></i></a><a class = "discord"><i class="fa fa-brands fa-discord"></i></a><a class = "github"><i class="fa fa-brands fa-github"></i></a></div>
     </div>
   </body>
 </html>
