@@ -591,6 +591,7 @@ nav.smull .active {
 }
 
 .gradetitle{
+  
   font-family: "Montserrat", sans-serif;
   text-shadow: 
     0 0 4px white,
@@ -743,6 +744,7 @@ nav.smull .active {
 
 
 .quoteimgwrap{
+
   display: inline-block;
   position: absolute;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -804,6 +806,7 @@ nav.smull .active {
 
 
 
+
 .gradecontain{
   top:220px;
   
@@ -812,6 +815,8 @@ nav.smull .active {
   
 
 }
+
+
 
 .hyperlink{
   text-decoration: none;
@@ -1028,6 +1033,40 @@ textarea{
   
 }
 
+@keyframes vanish{
+  from{opacity:0.8;}
+  to{opacity:1;
+    
+  
+  }
+}
+
+@keyframes inversevanish{
+  from{opacity:1;}
+  to{opactiy:0.8}
+}
+
+@keyframes zgone{
+  0%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+    
+  }
+}
+
+@keyframes inversezgone{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+    
+  }
+}
+
+
 
 @media screen and (max-height: 800px) and (min-width:960px){
   .abouttitle{
@@ -1230,6 +1269,7 @@ textarea{
 
 
   .cardtext{
+    width:375px;
     left:50vw;
     transform: translateX(-50%);
     top: 850px;
@@ -1257,5 +1297,284 @@ textarea{
     width:276.6px;
     top: 650px;
   }
+
+}
+
+@media screen and (max-width: 630px) {
+
+  .gradeimg{
+    content:url("img/squaregrade.png");
+    position: relative;
+    width:350px;
+    height: 350px;
+    border-radius:5px;
+    opacity: 0.8;
+    
+    transition: 0.4s;
+  }
+
+  .gradeimgwrap{
+    display: inline-block;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    left:calc(50vw - 175px);
+    top: 0px;
+    background: red;
+    line-height: 0;
+    border-radius: 5px;
+  }
+
+  .prodtextcard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+    line-height: 150%;
+    color:white;
+    background: rgba(0, 0, 0, 0.75);
+    padding:10px;
+    padding-right:20px;
+    left:calc(50vw - 175px);
+    font-size: 20px;
+    word-wrap: normal;
+    height:350px;
+    width:350px;
+    top:0px;
+    position: absolute;
+    display: inline-block;
+    text-align:right;
+    animation: inversezgone 0.7s ease both;
+    
+  }
+
+  .gradeimg:hover{
+    opacity:1;
+    width:685.71px;
+    height: 385.71px;
+    z-index: 1;
+  
+    
+  }
+
+  .swerveimg{
+    position: relative;
+    width:350px;
+    height: 350px;
+    border-radius:5px;
+    opacity: 0.8;
+    content:url("img/squaregame.png");
+    transition: 0.4s;
+    animation: inversevanish 0.7s ease both;
+  }
+  .swerveimgwrap{
+    display: inline-block;
+    position: absolute;
+
+    right:calc(50vw - 175px);
+    top: 0px;
+    background: red;
+    line-height: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    
+  }
+
+  .swervetextcard{
+    font-family: 'Fredoka', sans-serif;
+  border-radius: 5px;
+  line-height: 150%;
+  color:white;
+  background: rgba(0, 0, 0, 0.8);
+  padding:10px;
+  padding-left:20px;
+  font-size: 20px;
+  
+  word-wrap: normal;
+  width:350px;
+  height:350px;
+  top:0;
+  position: absolute;
+  display: inline-block;
+  left:calc(50vw - 175px);
+  text-align:left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: inversezgone 0.7s ease both;
+  }
+
+  .swerveimg:hover{
+    opacity:0.8; 
+    width:350px;
+    height: 350px;
+    z-index: 0;
+    
+    
+  }
+  
+
+  .quoteimg{
+    content:url("img/squarequote.png");
+    position: relative;
+    width:350px;
+    height: 350px;
+    border-radius:5px;
+    opacity: 0.8;
+    transition: 0.4s;
+    z-index:0;
+    animation: inversevanish 0.7s ease both;
+  }
+
+  
+
+  .quoteimgwrap{
+    
+    display: inline-block;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    left:calc(50vw - 175px);
+    top: 0px;
+    background: red;
+    line-height: 0;
+    border-radius: 5px;
+  }
+
+  .quotetextcard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 5px;
+    line-height: 150%;
+    color:white;
+    background: rgba(0, 0, 0, 0.75);
+    padding:10px;
+    padding-right:20px;
+    left:calc(50vw - 175px);
+    font-size: 20px;
+    word-wrap: normal;
+    height:350px;
+    width:350px;
+    top:0px;
+    position: absolute;
+    display: inline-block;
+    text-align:right;
+    animation: inversezgone 0.7s ease both;
+  
+  }
+
+  .quoteimg:hover{
+    opacity:0.8; 
+    width:350px;
+    height: 350px;
+    z-index: 0;
+  
+    
+  }
+
+  .infront{
+    opacity:0.8;
+    animation: vanish 0.7s ease both;
+  }
+
+  .cardfront{
+    animation: zgone 0.7s ease both;
+  }
+
+  .prodtitle{
+    top:10px;
+    font-size:60px;
+  }
+
+}
+
+@media screen and (max-width: 530px) {
+  .prodtitle{
+    font-size:50px;
+    top: 25px;
+  }
+}
+
+@media screen and (max-width:470px){
+  .prodtitle{
+    font-size:45px;
+    top:30px;
+  }
+
+  .gradeimg{
+    width:300px;
+    height: 300px;
+  }
+
+  .gradeimgwrap{
+
+    left:calc(50vw - 150px);
+
+  }
+
+  .prodtextcard{
+    left:calc(50vw - 150px);
+    height:300px;
+    width:300px;
+    font-size: 17px;
+  }
+
+
+  .quoteimg{
+    width:300px;
+    height: 300px;
+  }
+
+  .quoteimgwrap{
+
+    left:calc(50vw - 150px);
+
+  }
+
+  .quotetextcard{
+    left:calc(50vw - 150px);
+    height:300px;
+    width:300px;
+    font-size: 17px;
+  }
+
+  .swerveimg{
+    width:300px;
+    height: 300px;
+  }
+
+  .swerveimgwrap{
+
+    right:calc(50vw - 150px);
+
+  }
+
+  .swervetextcard{
+    left:calc(50vw - 150px);
+    height:300px;
+    width:300px;
+    font-size: 17px;
+  }
+
+  .gradecontain{
+    top:170px;
+    
+    position: relative;
+    
+  
+  }
+  
+  .quotecontain{
+    position: relative;
+    top:850px;
+  }
+  
+  .swervecontain{
+    top:510px;
+    position: relative;
+  }
+
+  .prodcontain{
+    height:1190px;
+    
+  }
+
+
+
 
 }
