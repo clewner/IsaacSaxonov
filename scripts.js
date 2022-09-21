@@ -128,7 +128,7 @@ $(document).ready(function(){
     }
     
     setTimeout(function() {
-      onScrollInit($('.waypoint'));z
+      onScrollInit($('.waypoint'));
     }, 10);
     
     
@@ -170,3 +170,61 @@ function smalldrop(){
     glowy.classList.remove("dropped");
   }}, 0);
 }
+
+function toggleQuote(){
+  console.log("togglequote");
+  if(window.innerWidth <= 630){
+      var imgquote = document.getElementById("qimg");
+      var texbox = document.getElementById("textq");
+      
+      if(imgquote.classList.contains("infront")){
+        imgquote.classList.remove("infront");
+        texbox.classList.remove("cardfront");
+        
+      }else{
+        imgquote.classList.add("infront");
+        texbox.classList.add("cardfront");
+       
+
+      }
+  }
+}
+
+function toggleQuoteSwerve(){
+  console.log("togglequoteserver");
+  if(window.innerWidth <= 630){
+      var imgquote = document.getElementById("simg");
+      var texbox = document.getElementById("swerveq");
+      
+      if(imgquote.classList.contains("infront")){
+        imgquote.classList.remove("infront");
+        texbox.classList.remove("cardfront");
+        
+      }else{
+        imgquote.classList.add("infront");
+        texbox.classList.add("cardfront");
+       
+
+      }
+  }
+}
+
+function toggleQuoteGrade(){
+  console.log("togglequoteserver");
+  if(window.innerWidth <= 630){
+      var imgquote = document.getElementById("gimg");
+      var texbox = document.getElementById("gradeq");
+      
+      if(imgquote.classList.contains("infront")){
+        imgquote.classList.remove("infront");
+        texbox.classList.remove("cardfront");
+        
+      }else{
+        imgquote.classList.add("infront");
+        texbox.classList.add("cardfront");
+       
+
+      }
+  }
+}
+
