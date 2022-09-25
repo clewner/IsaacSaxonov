@@ -1601,7 +1601,7 @@ textarea {
 @media screen and (max-width: 420px) {
 
   .form-control{
-    width:calc(100vw - 40px);
+    width:calc(100% - 40px);
   }
 
 
