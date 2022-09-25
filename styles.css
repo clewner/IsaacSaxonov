@@ -882,20 +882,21 @@ textarea.form-control-lg {
   background-color: rgb(15, 15, 15);
   z-index: 2;
   overflow: hidden;
+  text-align: center;
   
 }
 
 .contactcontain {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   max-width: 844px;
-  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: calc(50vh - 245px);
   display: block;
-  position: relative;
+  position: absolute;
 }
 
 form {
@@ -931,10 +932,10 @@ textarea {
   z-index: 7;
   display: inline;
   font-family: "Montserrat", sans-serif;
-  top: 0;
+  top: 50px;
   left: 0;
-  width: 100vw;
-  position: absolute;
+  
+  position: relative;
   color: white;
   font-size: 70px;
   text-align: center;
@@ -974,7 +975,7 @@ textarea {
 
 
 .animated.slide-in-right-extra {
-  animation: slideInRight 0.75s ease both;
+  animation: slideInRightExtra 0.75s ease both;
 }
 
 .animated.slide-down {
@@ -1601,12 +1602,12 @@ textarea {
 @media screen and (max-width: 420px) {
 
   .form-control{
-    width:calc(100% - 40px);
+    width:calc(100vw - 40px);
   }
 
 
   .contacttitle{
-    top:30px;
+    top:60px;
     font-size: 60px;
   }
 }
@@ -1614,7 +1615,9 @@ textarea {
 @media screen and (max-width: 350px) {
 
   .contacttitle{
+    
     font-size: 50px;
+    top:75px;
   }
 }
 
