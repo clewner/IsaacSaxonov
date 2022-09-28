@@ -48,7 +48,7 @@
         <?xml version="1.0" encoding="UTF-8"?>
 
         <h1 class = "midtext">Hey, I'm Isaac</h1>
-        <button class="shrink-border page-link" dest = "about" onclick = "smalldrop()">Learn More</button>
+        <button class="shrink-border shrinkhover page-link" dest = "about" onclick = "smalldrop();" id ="frontbutton">Learn More</button>
       </div>
 
 
@@ -87,7 +87,7 @@
       <div class = "cardcontain">
       <h1 class = "abouttitle slide detector waypoint" data-animation="slide-in-left-extra">ABOUT</h1>
       
-      <div class = "slidewrap slide detector" data-animation="fade-in"><div class = "imgtaint"><img src = "img/dopey.png" class = "meimg"></div></div>
+      <div class = "slidewrap slide detector" data-animation="fade-in"><div class = "imgtaint imghover" id ="imgtaintmobile"><img src = "img/dopey.png" class = "meimg" id = "actualimage"></div></div>
       <div class = "cardtext slide detector waypoint" data-animation="slide-in-left-extra">
         <p class ="cardp"><b>I'm Isaac Saxonov, a high school student at Piedmont High.</b><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum diam nunc, sit amet molestie enim eleifend quis. Maecenas feugiat, est a euismod fermentum, ligula mauris facilisis mauris, et euismod magna enim non quam.</p>
       </div>
@@ -137,7 +137,7 @@
           <div class="form-group">
             <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
           </div>
-          <button type="submit" class = "shrink-border buttonform">Submit</button>
+          <button type="submit" id = "cotabutton" class = "shrink-border buttonform">Submit</button>
         </form>
       </div>
       <div class = "contacticons"><a class = "gmail"><i class="fa fa-solid fa-envelope"></i></a><a class = "discord"><i class="fa fa-brands fa-discord"></i></a><a class = "github"><i class="fa fa-brands fa-github"></i></a></div>
