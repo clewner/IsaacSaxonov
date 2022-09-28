@@ -70,7 +70,7 @@ button::before {
   color: #aaa;
   cursor: pointer;
 }
-.shrink-border:hover {
+.shrinkhover:hover {
   background-color: transparent;
   box-shadow: none;
   color: #fff;
@@ -88,7 +88,7 @@ button::before {
   border: 3px solid rgba(255, 255, 255, 0.3);
   transition: opacity 0.3s, border 0.3s;
 }
-.shrink-border:hover::before {
+.shrinkhover:hover::before {
   opacity: 0;
   outline: none;
 }
@@ -106,7 +106,7 @@ button::before {
   transform: scaleX(1.1) scaleY(1.3);
   transition: transform 0.3s, opacity 0.3s;
 }
-.shrink-border:hover::after {
+.shrinkhover:hover::after {
   opacity: 1;
   transform: scaleX(1) scaleY(1);
   outline: none;
@@ -114,6 +114,30 @@ button::before {
   border-color: #ff0000;
   box-shadow: 0 0 7px #fff, 0 0 10px #ff0000, 0 0 20px #ff0000;
 }
+
+.shrinktoggle::after{
+  opacity: 1;
+  transform: scaleX(1) scaleY(1);
+  outline: none;
+
+  border-color: #ff0000;
+  box-shadow: 0 0 7px #fff, 0 0 10px #ff0000, 0 0 20px #ff0000;
+}
+
+.shrinktoggle::before{
+  opacity:0;
+  outline: none;
+}
+
+.shrinktoggle{
+  background-color: transparent;
+  box-shadow: none;
+  color: #fff;
+  text-shadow: 0 0 7px white, 0 0 10px #ff0000, 0 0 21px #ff0000,
+    0 0 42px #ff0000, 0 0 82px #ff0000, 0 0 92px #ff0000, 20px 0 102px #ff0000,
+    1px 0 0 #ff0000, -1px 0 0 #ff0000, 0 -1px 0 #ff0000, 0 1px 0 #ff0000;
+}
+
 
 nav.smull {
   transition: height 2s;
@@ -437,16 +461,26 @@ nav.smull .active {
   transition: 0.3s;
   z-index: -2;
 }
-.imgtaint:hover:after {
+.imghover:hover:after {
   left: 0.8rem;
   top: 0.8rem;
 }
-.imgtaint:hover .meimg {
+.imghover:hover .meimg {
   opacity: 1;
 }
-.imgtaint:hover {
+.imghover:hover {
   background-color: transparent;
 }
+
+.imgtainttoggle:after{
+  left:0.8rem;
+  top:0.8rem;
+}
+
+.imgtainttoggle{
+  background:transparent;
+}
+
 .cardtext {
   width: calc(100% - 400px);
   top: 30%;
