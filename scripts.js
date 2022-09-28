@@ -8,6 +8,28 @@ var isMobile;
   }
 $(document).ready(function(){
 
+    if(isMobile){
+      
+      var imgtainter = document.getElementById("imgtaintmobile");
+      var bigbutton = Array.from(document.getElementsByClassName("shrink-border"));
+      imgtainter.setAttribute('onclick', 'imghovermobile()');
+      
+      imgtainter.classList.remove("imghover");
+
+      bigbutton.forEach(buttoner => {
+        buttoner.classList.remove("shrinkhover");
+        var random = "";
+        if(buttoner.getAttribute('onclick')){
+          random = buttoner.getAttribute('onclick');
+          
+        }
+        
+        buttoner.setAttribute('onclick', random + ' frontbuttonmobile(\"' + buttoner.id +'\");');
+        
+      });
+      
+    }
+
 
     $(".one").click(function(){
       $(this).toggleClass("is-active");
@@ -135,7 +157,7 @@ $(document).ready(function(){
   });
   
   function highlightLink(anchor) {
-          console.log(anchor)
+          
           $('nav .active').removeClass('active');
           $('nav')
             .find('[dest="' + anchor + '"]')
@@ -172,7 +194,7 @@ function smalldrop(){
 }
 
 function toggleQuote(){
-  console.log("togglequote");
+  
   if(window.innerWidth <= 630){
       var imgquote = document.getElementById("qimg");
       var texbox = document.getElementById("textq");
@@ -191,7 +213,7 @@ function toggleQuote(){
 }
 
 function toggleQuoteSwerve(){
-  console.log("togglequoteserver");
+  
   if(window.innerWidth <= 630){
       var imgquote = document.getElementById("simg");
       var texbox = document.getElementById("swerveq");
@@ -210,7 +232,7 @@ function toggleQuoteSwerve(){
 }
 
 function toggleQuoteGrade(){
-  console.log("togglequoteserver");
+  
   if(window.innerWidth <= 630){
       var imgquote = document.getElementById("gimg");
       var texbox = document.getElementById("gradeq");
@@ -228,3 +250,28 @@ function toggleQuoteGrade(){
   }
 }
 
+
+
+function imghovermobile(){
+  var imger = document.getElementById("imgtaintmobile");
+  if(imger.classList.contains("imgtainttoggle")){
+    imger.classList.remove("imgtainttoggle");
+    document.getElementById("actualimage").style.opacity = "0.8";
+
+  }else{
+    imger.classList.add("imgtainttoggle");
+    document.getElementById("actualimage").style.opacity = "1";
+  }
+}
+
+function frontbuttonmobile(idder){
+  
+  var buttoner = document.getElementById(idder);
+  if(!(buttoner.classList.contains("shrinktoggle"))){
+    buttoner.classList.add("shrinktoggle");
+    setTimeout(() => {
+      buttoner.classList.remove("shrinktoggle");
+    }, "1000")
+    
+  }
+}
